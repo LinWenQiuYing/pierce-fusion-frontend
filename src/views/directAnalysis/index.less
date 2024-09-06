@@ -1,0 +1,112 @@
+.direct-analysis {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+
+  &-header {
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 56px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &-content {
+    padding: 24px;
+    height: calc(100% - 56px);
+
+    &-options {
+      padding-bottom: 24px;
+      border-bottom: 1px dashed #d9d9d9;
+
+      .options-item {
+        display: flex;
+        line-height: 32px;
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &-label {
+          width: 72px;
+          color: #262626;
+        }
+
+        &-content {
+          width: calc(100% - 72px);
+
+          .ant-radio-group {
+            .anticon {
+              font-size: 12px;
+              margin-right: 15px;
+              //background-color: #bfbfbf;
+              border-radius: 50%;
+            }
+          }
+
+          .ant-checkbox-group {
+            display: inline;
+
+            .ant-checkbox-wrapper {
+              .ant-checkbox {
+                margin-top: 2px;
+              }
+            }
+          }
+
+          .anticon-double-right,
+          .anticon-double-left {
+            margin-top: 8px;
+          }
+
+          .anticon-question-circle {
+            font-size: 12px;
+            margin-left: 5px;
+            line-height: 32px;
+          }
+
+          .ant-radio-wrapper {
+            margin-right: 0px;
+          }
+
+          .ant-input-affix-wrapper {
+            width: 720px;
+            height: 100%;
+          }
+
+          .content-cascader {
+            width: 720px;
+          }
+
+          .reset-btn {
+            cursor: pointer;
+            margin-left: 8px;
+            color: #1776ff;
+          }
+        }
+      }
+    }
+
+    &-result {
+      padding-top: 24px;
+      height: calc(100% - 307px);
+
+      .content-sub-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .table-component {
+        height: calc(100% - 64px);
+      }
+
+      .result-content-skip {
+        color: @blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
